@@ -37,9 +37,26 @@ color:blue;
 }
 
 body{
-margin:0
+margin:0;
 }
 
 *{
 box-sizing: border-box;
+}
+.camp_uno{
+width:500px;
+margin-left:auto;
+margin-right:auto;
+padding:10px
+}
+.enviar{
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+font-family:'Courier New', Courier, monospace;
+}
+h2{
+text-align: center;
+font-size: 25px;
 }
