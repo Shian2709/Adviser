@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Shirley Gonzales Palacios,Pedro Pablo salas erazo,David Rosales Mendoza,Sergio Quichca Rojas">
-    <link rel="stylesheet" href="/style.css">
-    <title>Adviser</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author"
+    content="Shirley Gonzales Palacios,Pedro Pablo salas erazo,David Rosales Mendoza,Sergio Quichca Rojas,Robert Eduardo Valera" />
+  <link rel="stylesheet" href="/normalize.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="/image/logo.jpg">
+  <title>Adviser</title>
 </head>
+
 <body>
-<header>
-<nav>
-    <ul>
+  <header>
+    <nav>
+      <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Trabajo</a></li>
         <li><a href="#">Hogar</a></li>
         <li><a href="#">Suscripción</a></li>
-    </ul>
-</nav>
-<section>
-    <h1>Adviser</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates suscipit ullam atque explicabo adipisci voluptas distinctio aliquam corrupti ab asperiores cum aperiam, deleniti quaerat accusamus minima animi quisquam maiores?</p>
-</section>
-</header>
-<main>
-    <article>
-        <h2>Registros</h2>
-        <form action="#" method="POST">
-            <fieldset class="camp_uno">
-                <legend>Porcentaje por trabajadores</legend>
-            <label for="question_1">¿Cuántos trabajadores tienes?</label>
-            <input type="number" id="question_1" placeholder="ingresa la cantidad de trabajadores" ><br>
-            <label for="question_2">¿Cuántos ganan tus trabajadores?</label>
-            <input type="number" id="question_2" placeholder="ingresa cuanto ganan tus trabajadores" ><br>
-            <label for="question_3">¿Cuánto ganas mensualmente?</label>
-            <input type="number" id="question_3" placeholder="ingresa la cantidad mensual"><br>
-            <input type="submit" value="Enviar" class="enviar">
-            </fieldset>
-        </form>
-    </article>
-</main>
-<footer>
-
-</footer>   
-<script src="index.js"></script> 
+      </ul>
+    </nav>
+    <section>
+      <h1>Adviser</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem
+        voluptates suscipit ullam atque explicabo adipisci voluptas distinctio
+        aliquam corrupti ab asperiores cum aperiam, deleniti quaerat accusamus
+        minima animi quisquam maiores?
+      </p>
+    </section>
+  </header>
+  <main class="wallpaper">
+    <section>
+      <h2>Registros</h2>
+      <form action="#" method="POST">
+        <fieldset class="camp_uno">
+          <legend class="legend">Porcentaje por área</legend>
+          <label for="question_1">¿Cuántos trabajadores tienes?</label>
+          <input type="number" id="question_1" placeholder="cantidad trabajadores" autofocus/>
+          <label for="question_2">¿Cuánto ganan tus trabajadores?</label>
+          <input type="number" id="question_2" placeholder="ganacia trabajadores" />
+          <label for="question_3">¿Cuánto ganas mensualmente?</label>
+          <input type="number" id="question_3" placeholder="cantidad mensual" aria-atomic="true">
+          <button type="button" class="enviar" onclick="mostrar()">Enviar</button>
+          <textarea id="date" cols="30" rows="10" minlength="1" maxlength="100"></textarea>
+          <button type="button" id="reproducir" onclick="escuchar()">Reproducir</button>
+          <a href="/work/porcentaje por área.txt" class="link" download="">Descargar pseudocódigo</a>
+        </fieldset>
+      </form>
+    </section>
+    </div>
+  </main>
+  <footer></footer>
+  <script src="main.js"></script>
 </body>
+
 </html>
